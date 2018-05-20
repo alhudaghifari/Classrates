@@ -2,6 +2,7 @@ function submitComment(commentControl) {
     var comments = document.getElementsByName(commentControl)[0].value;
     var subscriptionKey = "ecf283002ea240a78c61e6e73fbcab24";
     var url = "https://westcentralus.api.cognitive.microsoft.com/text/analytics/v2.0/sentiment";
+    
 
     var payload = '{ "documents": [ { "language": "en-US", "id": "1", "text": "' + comments + '" }]}';
 
